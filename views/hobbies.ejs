@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet href="/main.css">
+        <title>Hobbies</title>
+    </head>
+
+    <body>
+        <%- include('common/header'); %>
+        <div class='content'>
+            <h1>List of Hobbies</h1>
+            <section class='dataSet'>
+                <table class='data'>
+                    <tr>
+                        <th>Hobby Id</th>
+                        <th>Club Name</th>
+                    </tr>
+                    <tr>
+                        <% hobbies.forEach(hobby => { %>
+                            <tr>
+                                <td><%- hobby.Hby_Id %></td>
+                                <td><%- hobby.Hby_Name %></td>
+                            </tr>
+                        <% }) %>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

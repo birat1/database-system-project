@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet href="/main.css">
+        <title>Clubs</title>
+    </head>
+
+    <body>
+        <%- include('common/header'); %>
+        <div class='content'>
+            <h1>List of Clubs</h1>
+            <section class='dataSet'>
+                <table class='data'>
+                    <tr>
+                        <th>Club Id</th>
+                        <th>Club Name</th>
+                        <th>Club Email</th>
+                        <th>Club Enrollment</th>
+                    </tr>
+                    <tr>
+                        <% clubs.forEach(club => { %>
+                            <tr>
+                                <td><%- club.Clb_Id %></td>
+                                <td><%- club.Clb_Name %></td>
+                                <td><%- club.Clb_Email %></td>
+                                <td><%- club.Clb_enrolment %></td>
+                            </tr>
+                        <% }) %>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet href="/main.css">
+        <title>Students</title>
+    </head>
+
+    <body>
+        <%- include('common/header'); %>
+        <div class='content'>
+            <h1>Student Dashboard</h1>
+            <section class='search'>
+                <form method="post" action="/students">
+                    <label for="searchTerm">Search Student:</label>
+                    <input type="text" id="searchTerm" name="searchTerm" placeholder="Enter student's name">
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+            <p></p>
+            <section class='dataSet'>
+                <table class='data'>
+                    <tr>
+                        <th>URN</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>DOB</th>
+                        <th>Phone Number</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                        <th>Type</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <% students.forEach(student => { %>
+                            <tr>
+                                <td><%- student.URN %></td>
+                                <td><%- student.Stu_FName %></td>
+                                <td><%- student.Stu_LName %></td>
+                                <td><%- student.Stu_DOB %></td>
+                                <td><%- student.Stu_Phone %></td>
+                                <td><%- student.Crs_Title %></td>
+                                <td><%- student.Stu_Email %></td>
+                                <td><%- student.Stu_Type %></td>
+                                <td>
+                                    <div class='actions'>
+                                        <a href='/students/<%- student.URN %>'>View</a>
+                                        <a href='/students/<%- student.URN %>/edit'>Edit</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        <% }) %>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

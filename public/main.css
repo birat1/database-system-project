@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+  
+.content {
+height: 100vh;
+padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #282525;
+}
+
+h3 {
+    text-align: center;
+    color: #282525;
+}
+
+h4 {
+    position: relative;
+    top: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a, .actions a {
+    text-decoration: none;
+    color: #000;
+}
+
+.actions a {
+    width: 150px;
+    height: 40px;
+    padding: 2px;
+    background-color: #afa5a5;
+    color: #fff;
+}
+
+.links .clubcard {
+    margin: 0.8rem;
+    width: 150px;
+    height: 160px;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1%;
+    background-color: #26569e42;
+}
+
+.links .coursecard {
+    margin: 0.8rem;
+    width: 150px;
+    height: 160px;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1%;
+    background-color: #1d9a4942;
+    text-decoration: none;
+}
+
+.links .hobbycard {
+    margin: 0.8rem;
+    width: 150px;
+    height: 160px;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1%;
+    background-color: #c0d54c42;
+    text-decoration: none;
+}
+
+.links .studentcard {
+    margin: 0.8rem;
+    width: 150px;
+    height: 160px;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1%;
+    background-color: #896acb42;
+    text-decoration: none;
+}
+
+.icon {
+    position: relative;
+    top: 30px;
+}
+
+
+.data th, td {
+  padding: 10px;
+  text-align: center;
+  border: 0.8px solid #ccc;
+}
+
+.data th {
+    color: #524c4c;
+    background-color: #d0c5c54c;
+}
+
+.data td {
+    color: #252525;
+    background-color: #e6e1e12a;
+}
+
+.dataSet, .search {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}

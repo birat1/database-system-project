@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet href="/main.css">
+        <title>Home</title>
+    </head>
+
+    <body>
+        <%- include('common/header'); %>
+        <div class='content'>
+            <h1>University of Surrey Tracker</h1>
+            <div class='links'>
+                <a href='/students'>
+                    <section class='studentcard'>
+                        <img class='icon' src='assets/student.png' alt='student icon' width=25% height=25%/>
+                        <h4> Total Students </h4>
+                        <h2>
+                            <%= studentsCount %>
+                        </h2>
+                    </section>
+                </a>
+                <a href='/courses'>
+                    <section class='coursecard'>
+                        <img class='icon' src='assets/courses.png' alt='course icon' width=25% height=25%/>
+                        <h4> Total Courses </h4>
+                        <h2>
+                            <%= coursesCount %>
+                        </h2>
+                    </section>
+                </a>
+                <a href='/clubs'>
+                    <section class='clubcard'>
+                        <img class='icon' src='assets/clubs.png' alt='clubs icon' width=25% height=25%/>
+                        <h4> Total Clubs </h4>
+                        <h2>
+                            <%= clubsCount %>
+                        </h2>
+                    </section>
+                </a>
+                <a href='/hobbies'>
+                    <section class='hobbycard'>
+                        <img class='icon' src='assets/hobbies.png' alt='hobby icon' width=25% height=25%/>
+                        <h4> Total Hobbies </h4>
+                        <h2>
+                            <%= hobbiesCount %>
+                        </h2>
+                    </section>
+                </a>
+        </div>
+        <%- include('common/footer'); %>
+    </body>
+</html>
